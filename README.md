@@ -1,16 +1,17 @@
-# app
+1. setup
 
-A new Flutter project.
+    ```shell
+    flutter build web
+   
+    # run a hosting server
+    poetry install
+    poetry run uvicorn server:app
+    ```
+    
+    This hosting server returns 401 error for `/assets/fonts/MaterialIcons-Regular.otf`, only first 2 times.
 
-## Getting Started
+2. Open a new guest browser of Google Chrome and access to `http://localhost:8080`. .
 
-This project is a starting point for a Flutter application.
+4. Reload the web page 2 times or more
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+    - In the Chrome developer console, we can see that `/assets/fonts/MaterialIcons-Regular.otf` is still 401 error while `curl http://localhost:8000/assets/fonts/MaterialIcons-Regular.otf` returns 200 success response
