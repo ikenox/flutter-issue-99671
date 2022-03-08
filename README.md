@@ -3,6 +3,9 @@
     ```shell
     flutter build web
    
+    # install poetry to run a hosting server
+    # Please follow the official instruction https://python-poetry.org/docs/
+   
     # run a hosting server
     poetry install
     poetry run uvicorn server:app
