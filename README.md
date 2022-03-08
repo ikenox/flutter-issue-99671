@@ -13,7 +13,7 @@
     
     This hosting server returns 500 error for `/assets/fonts/MaterialIcons-Regular.otf`, only first 2 times.
 
-2. Open a new guest browser of Google Chrome and access to `http://localhost:8080`. .
+2. Open a new guest browser of Google Chrome and access to `http://localhost:8000`.
 
 4. Reload the web page 2 times or more
 
