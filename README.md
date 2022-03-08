@@ -8,10 +8,10 @@
     poetry run uvicorn server:app
     ```
     
-    This hosting server returns 401 error for `/assets/fonts/MaterialIcons-Regular.otf`, only first 2 times.
+    This hosting server returns 500 error for `/assets/fonts/MaterialIcons-Regular.otf`, only first 2 times.
 
 2. Open a new guest browser of Google Chrome and access to `http://localhost:8080`. .
 
 4. Reload the web page 2 times or more
 
-    - In the Chrome developer console, we can see that `/assets/fonts/MaterialIcons-Regular.otf` is still 401 error while `curl http://localhost:8000/assets/fonts/MaterialIcons-Regular.otf` returns 200 success response
+    - In the Chrome developer console, we can see that `/assets/fonts/MaterialIcons-Regular.otf` is still 500 error while `curl http://localhost:8000/assets/fonts/MaterialIcons-Regular.otf` returns 200 success response
